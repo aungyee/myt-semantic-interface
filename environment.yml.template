@@ -1,0 +1,24 @@
+name: mytsi
+channels:
+  - defaults
+dependencies:
+  - python==3.12
+  - pip
+  - pip:
+      - requests
+      - pandas
+      - snowflake-connector-python[pandas]
+      - snowflake-sqlalchemy
+      - tqdm
+      - jupyterlab
+      - langchain
+      - langchain_community
+      - langchain_chroma
+      
+variables:
+  snowflake_account: ...
+  snowflake_email: ...
+  snowflake_password: ...
+  snowflake_database: ...
+  snowflake_warehouse: ...
+  snowflake_role: ...
